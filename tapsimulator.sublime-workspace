@@ -1,0 +1,637 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ex",
+				"export_name"
+			],
+			[
+				"sty",
+				"study_obj"
+			],
+			[
+				"do",
+				"download_file"
+			],
+			[
+				"E",
+				"Enrollment"
+			],
+			[
+				"Phy",
+				"Physio_therapy"
+			],
+			[
+				"Ps",
+				"Psychiatrist"
+			],
+			[
+				"Neu",
+				"Neurologist"
+			],
+			[
+				"en",
+				"enroll_id"
+			],
+			[
+				"cho",
+				"handed_choices"
+			],
+			[
+				"choi",
+				"choices"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "html/main.py",
+			"settings":
+			{
+				"buffer_size": 934,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/back_end_codes/controller.py",
+			"settings":
+			{
+				"buffer_size": 1295,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/templates/tappingsimulator_views/tappingsimulator_index.html",
+			"settings":
+			{
+				"buffer_size": 77,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/templates/base_layout.html",
+			"settings":
+			{
+				"buffer_size": 306,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 52.0,
+		"last_filter": "refresh",
+		"selected_items":
+		[
+			[
+				"refresh",
+				"Project: Refresh Folders"
+			],
+			[
+				"syntax",
+				"Set Syntax: Jinja2"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"python ",
+				"Set Syntax: Python"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 406.0,
+		"history":
+		[
+			"print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"dh = hashlib.sha256(by).hexdigest();",
+			"by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read();",
+			"urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );",
+			"ipp = sublime.installed_packages_path();",
+			"pf = 'Package Control.sublime-package';",
+			"h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88';",
+			"import urllib.request,os,hashlib;",
+			" import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/robin/tappingsimulator",
+		"/home/robin/tappingsimulator/html",
+		"/home/robin/tappingsimulator/html/back_end_codes",
+		"/home/robin/tappingsimulator/html/templates",
+		"/home/robin/tappingsimulator/html/templates/tappingsimulator_views"
+	],
+	"file_history":
+	[
+		"/home/robin/tappingsimulator/html/settings.py",
+		"/home/robin/tappingsimulator/html/controllers.py",
+		"/home/robin/tappingsimulator/views.py",
+		"/home/robin/tappingsimulator/settings.py",
+		"/home/robin/tappingsimulator/controllers.py",
+		"/home/robin/tappingsimulator/models.py",
+		"/home/robin/tapsimulator/tapsimulator.py",
+		"/home/robin/Downloads/a8241022_qma_qmgh_nonsensitive_20170206.txt",
+		"/home/robin/Downloads/a8241022_qma_qmgh_nonsensitive_20170103.",
+		"/home/robin/Desktop/SIGNAL_qmotor_quantimedis_20170203.txt",
+		"/home/robin/Desktop/signal_old.txt",
+		"/home/robin/Desktop/SIGNAL_qmotor_quantimedis_20170202.txt",
+		"/home/robin/Desktop/signal_qmotor_quantimedis_20160630.txt",
+		"/mnt/rechenknecht/home/robin/pymotor/pymedx/datatools.py",
+		"/mnt/rechenknecht/home/robin/pymotor/pymedx/pony_tools.py",
+		"/home/robin/pymotor/pymedx/models.py",
+		"/home/robin/pymotor/reconciliation/legato.py",
+		"/tmp/mozilla_robin0/ LEGATO-HD_qmotor_quantimedis_20161024.txt",
+		"/home/robin/pymotor/webapp/webapp/templates/paced_tapping.html",
+		"/home/robin/pymotor/pymotor/pymotor.py",
+		"/home/robin/pymotor/webapp/webapp/views.py",
+		"/home/robin/pymotor/reconciliation/pride.py",
+		"/home/robin/pymotor/pymedx/pymedx.py",
+		"/home/robin/pymotor/pymedx/datatools.py",
+		"/home/robin/pymotor/pyzoom/raw_extract.py",
+		"/home/robin/pymotor/reconciliation/amaryllis.py",
+		"/tmp/mozilla_robin0/ LEGATO-HD_qmotor_quantimedis_20160922-4.txt",
+		"/home/robin/Desktop/ LEGATO-HD_qmotor_quantimedis_20160922.txt",
+		"/tmp/mozilla_robin0/ LEGATO-HD_qmotor_quantimedis_20160922-2.txt",
+		"/tmp/mozilla_robin0/ LEGATO-HD_qmotor_quantimedis_20160922-3.txt",
+		"/tmp/mozilla_robin0/ LEGATO-HD_qmotor_quantimedis_20160922-1.txt",
+		"/home/robin/pymotor/reconciliation/reconciliation.py",
+		"/home/robin/pymotor/reconciliation/crawl_2mt.py",
+		"/home/robin/pymotor/reconciliation/signal.py",
+		"/tmp/mozilla_robin0/d3c6cbff-8d55-4e26-a73a-2cfc90b4440b",
+		"/tmp/mozilla_robin0/0d4cccb4-8953-4dc6-b4c8-f013d2c82eca",
+		"/tmp/mozilla_robin0/84e1738c-859a-4c9b-bc72-e9a439e28211",
+		"/tmp/mozilla_robin0/704008e4-a5d9-4585-80b6-4fadc0a689ad",
+		"/home/robin/ghi_intranet/intranet/intranet/static/testdata/enroll-hd-demog-20160128-1254.csv",
+		"/home/robin/ghi_intranet/intranet/intranet/static/misc/subjects.csv",
+		"/home/robin/ghi_intranet/intranet/intranet/views.py",
+		"/home/robin/ghi_intranet/intranet/ambulance/admin.py",
+		"/home/robin/ghi_intranet/intranet/ambulance/models.py",
+		"/home/robin/ghi_intranet/intranet/enroll/admin.py",
+		"/home/robin/ghi_intranet/intranet/enroll/models.py",
+		"/home/robin/ghi_intranet/intranet/intranet/settings.py",
+		"/home/robin/ghi_intranet/intranet/intranet/urls.py",
+		"/home/robin/ghi_intranet/intranet/ghi/admin.py",
+		"/home/robin/ghi_intranet/intranet/ghi/models.py",
+		"/home/robin/ghi_intranet/intranet/intranet/templates/base.html",
+		"/home/robin/ghi_intranet/intranet/intranet/templates/example.html",
+		"/home/robin/ghi_intranet/intranet/enroll/enroll_models.py",
+		"/home/robin/ghi_intranet/intranet/intranet/static/testdata/enroll-hd-cag-20160128-1254.csv",
+		"/home/robin/ghi/pymotor/organisation/interface.py",
+		"/home/robin/private/Fullmetal-Alchemist-Brotherhood",
+		"/home/robin/ghi/qmotor/amaryllis/AMARYLLIS_1021_reconciliation_20160511.csv",
+		"/home/robin/ghi/qmotor/amaryllis/links_20160512.txt",
+		"/home/robin/git/pymotor/webapp/webapp/metronome_bimanual/metronome_bimanual.py",
+		"/home/robin/git/wdl-ol/README.txt",
+		"/home/robin/git/wdl-ol/common.xcconfig",
+		"/home/robin/juce/juce_amalgamated.h",
+		"/home/robin/juce/src/native/linux/juce_linux_Audio.cpp",
+		"/home/robin/juce/src/containers/juce_SortedSet.h",
+		"/home/robin/git/wdl-ol/IPlugExamples/duplicate.py",
+		"/home/robin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sumulation",
+			", width=5",
+			"stidky",
+			"variance",
+			"self.control_frame",
+			"grid",
+			"10033001",
+			"12575004",
+			"12575004\n",
+			"12575",
+			"12566002\n",
+			"\\|10\\|",
+			"31097004",
+			"\\|10\\|",
+			"10",
+			"access",
+			"process",
+			"could not",
+			"mpld",
+			"mp;s",
+			"study_path",
+			"on=",
+			"verbose_text",
+			"Key\\(",
+			"Field\\(",
+			", ",
+			"\\t",
+			"  \n",
+			"10041001",
+			"-$",
+			"Streamcloud</a",
+			"Streamcloud",
+			";"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"simulation",
+			"sticky",
+			"control_frame",
+			"study_url",
+			"to=",
+			"verbose_name",
+			"Key(\\n\\t\\t",
+			"Field(\\n\\t\\t",
+			",\\n\\t\\t",
+			",\\n\\t",
+			",\\n",
+			"  ",
+			"-1",
+			";\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "html/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								700,
+								700
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 25
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "html/back_end_codes/controller.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": true,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_insert",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 30
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "html/templates/tappingsimulator_views/tappingsimulator_index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 77,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/Jinja2.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 23
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "html/templates/base_layout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/Jinja2.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tapsimulator.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"models",
+				"pymedx/models.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/ghi_intranet/intranet/intranet/ghi-intranet.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"_vintageous_last_buffer_search": "setting",
+		"_vintageous_last_buffer_search_command": "vi_slash",
+		"_vintageous_last_char_search_command": "vi_t",
+		"_vintageous_last_character_search": ",",
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "/home/robin/tappingsimulator/html/templates"
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
