@@ -3,13 +3,32 @@
     <script src="{{ 'js/jquery.min.js'|staticfile }}"></script>
     <script src="{{ 'js/bootstrap.min.js'|staticfile }}"></script>
     <link rel="stylesheet" href="{{ 'css/bootstrap.min.css'|staticfile }}">
+
+    <link href="{{ 'css/bokeh-0.12.0.min.css'|staticfile }}" rel="stylesheet" type="text/css">
+    <link href="{{ 'css/bokeh-widgets-0.12.0.min.css'|staticfile }}" rel="stylesheet" type="text/css">
+
+    <script src="{{ 'js/bokeh-0.12.0.min.js'|staticfile }}"></script>
+    <script src="{{ 'js/bokeh-widgets-0.12.0.min.js'|staticfile }}"></script>
 </head>
 
 <body>
 
+    <div class="container-fluid">
+    <br>
+
     {% block main_container %}
 
     {% endblock %}
+    
+    <br>
+    </div>
+
 
 </body>
 </html>
+
+<!--script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script-->

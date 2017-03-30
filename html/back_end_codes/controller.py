@@ -1,5 +1,9 @@
 import htmlPy
 import json
+from back_end_codes.models import TappingSimulation
+from bokeh.plotting import figure, output_file, save
+from bokeh.embed import components
+import os
 # from ..main import app as htmlPy_app
 
 
@@ -7,10 +11,35 @@ class TappingSimulator(htmlPy.Object):
     # GUI callable functions have to be inside a class.
     # The class should be inherited from htmlPy.Object.
 
-    def __init__(self):
+    def __init__(self, app):
         super(TappingSimulator, self).__init__()
-        # Initialize the class here, if required.
-        return
+        self.app = app
+        self.Simulation = TappingSimulation()
+        self.Simulation.generate()
+        self.output_file = os.path.join(self.app.template_path, 'tappingsimulator_views/linegraph.html')
+        # output_file(self.output_file)
+        self.plot = figure()
+
+        self.save_simulation()
+
+    def save_simulation(self):
+        self.plot.line(self.Simulation.x, self.Simulation.y, line_width=2)
+        self.script, self.div = components(self.plot)
+        self.app.evaluate_javascript(self.script)
+        self.app.template = (
+            'tappingsimulator_views/tappingsimulator_index.html', 
+            {
+                'script': self.script,
+                'div': self.div
+            }
+        )
+        with open('/home/robin/tapping_simulator/html/tmp1.html', 'w') as output:
+            output.write(self.div)
+        with open('/home/robin/tapping_simulator/html/tmp2.html', 'w') as output:
+            output.write(self.script)
+        
+        # save(self.plot)
+
 
     @htmlPy.Slot()
     def function_name(self):
@@ -40,3 +69,6 @@ class TappingSimulator(htmlPy.Object):
 ## You have to bind the class instance to the AppGUI instance to be
 ## callable from GUI
 # htmlPy_app.bind(ClassName())
+
+if __name__ == "__main__":
+    tmp = TappingSimulator()
