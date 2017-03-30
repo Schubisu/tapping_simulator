@@ -27,17 +27,17 @@ class TappingSimulator(htmlPy.Object):
         self.script, self.div = components(self.plot)
         self.app.evaluate_javascript(self.script)
         self.app.template = (
-            'tappingsimulator_views/tappingsimulator_index.html', 
+            'tappingsimulator_views/tappingsimulator_index.html',
             {
                 'script': self.script,
                 'div': self.div
             }
         )
-        with open('/home/robin/tapping_simulator/html/tmp1.html', 'w') as output:
-            output.write(self.div)
-        with open('/home/robin/tapping_simulator/html/tmp2.html', 'w') as output:
-            output.write(self.script)
-        
+        # with open('/home/robin/tapping_simulator/html/tmp1.html', 'w') as output:
+        #     output.write(self.div)
+        # with open('/home/robin/tapping_simulator/html/tmp2.html', 'w') as output:
+        #     output.write(self.script)
+
         # save(self.plot)
 
 
