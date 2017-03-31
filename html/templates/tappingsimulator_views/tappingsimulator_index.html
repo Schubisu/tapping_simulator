@@ -14,14 +14,41 @@
                 <form action="" method="POST" class="form">
                     <legend>Adjust Parameters</legend>
 
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Value</th>
+                                <th>Noise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>IOI</th>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th>TD</th>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th>TF</th>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                                <td><input class="form-control input-sm" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5"></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    <div class="form-group form-group-sm">
+                    <!--div class="form-group form-group-sm">
                         <label for="ioi_number_input" class="control-label">IOI:</label>
                         <input class="form-control" id="ioi_number_input" type="number" min="0" max="10" step="1" value="5">
-                    </div>
-                    <div class="form-group form-group-sm">
-                        <label for="td_number_input" class="control-label">TD:</label>
-                        <input class="form-control" id="td_number_input" type="number" min="0" max="10" step="1" value="5">
                     </div>
                     <div class="form-group form-group-sm">
                         <label for="tf_number_input" class="control-label">TF:</label>
@@ -30,7 +57,7 @@
                     <div class="form-group form-group-sm">
                         <label for="noise_number_input" class="control-label">Noise:</label>
                         <input class="form-control" id="noise_number_input" type="number" min="0" max="10" step="1" value="5">
-                    </div>
+                    </div-->
 
                     <button type="submit" class="btn btn-primary btn-block">Generate</button>
 

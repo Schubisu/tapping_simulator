@@ -23,8 +23,8 @@ app.static_path = os.path.join(BASE_DIR, "static/")
 app.template_path = os.path.join(BASE_DIR, "templates/")
 app.template = ("tappingsimulator_views/tappingsimulator_index.html", {})
 
-app.web_app.setMinimumWidth(1600)
-app.web_app.setMinimumHeight(800)
+app.web_app.setMinimumWidth(1000)
+app.web_app.setMinimumHeight(500)
 # app.window.setWindowIcon(QtGui.QIcon(BASE_DIR + "/static/img/icon.png"))
 
 # Binding of back-end functionalities with GUI
