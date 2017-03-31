@@ -15,7 +15,7 @@ class TappingSimulator(htmlPy.Object):
         self.app = app
         self.Simulation = TappingSimulation()
         self.Simulation.generate()
-        # self.output_file = os.path.join(self.app.template_path, 'tappingsimulator_views/linegraph.html')
+        # self.output_file = os.path.join(self.app.template_path, 'tapping_simulator_views/linegraph.html')
         # output_file(self.output_file)
         # self.plot = figure(width=int(app.width * .45), height=int(app.width * .45))
 
