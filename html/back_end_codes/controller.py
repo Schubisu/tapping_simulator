@@ -17,19 +17,24 @@ class TappingSimulator(htmlPy.Object):
         self.Simulation.generate()
         # self.output_file = os.path.join(self.app.template_path, 'tappingsimulator_views/linegraph.html')
         # output_file(self.output_file)
-        self.plot = figure(width=int(app.width * .45), height=int(app.width * .4))
+        # self.plot = figure(width=int(app.width * .45), height=int(app.width * .45))
 
         self.save_simulation()
 
     def save_simulation(self):
-        self.plot.line(self.Simulation.x, self.Simulation.y, line_width=2)
-        self.script, self.div = components(self.plot)
-        self.app.evaluate_javascript(self.script)
+        p = figure(width=int(self.app.width * .45), height=int(self.app.width * .45))
+        p.line(self.Simulation.x, self.Simulation.y, line_width=2)
+        script, div = components(p)
+        # self.plot.clear()
+        # self.plot.line(self.Simulation.x, self.Simulation.y, line_width=2)
+        # self.script, self.div = components(self.plot)
+        # self.app.evaluate_javascript(self.script)
         self.app.template = (
-            'tappingsimulator_views/tappingsimulator_index.html',
+            'ts/index.html',
             {
-                'script': self.script,
-                'div': self.div
+                'plot': self.Simulation,
+                'script': script,
+                'div': div
             }
         )
         # with open('/home/robin/tapping_simulator/html/tmp1.html', 'w') as output:
@@ -51,12 +56,31 @@ class TappingSimulator(htmlPy.Object):
         return
 
     @htmlPy.Slot(str, result=str)
-    def form_function_name(self, json_data):
+    def update(self, json_data):
         # @htmlPy.Slot(arg1_type, arg2_type, ..., result=return_type)
         # This function can be used for GUI forms.
         #
         form_data = json.loads(json_data)
-        return json.dumps(form_data)
+        # print(form_data)
+        self.Simulation.ioi = float(form_data['ioi_value'])
+        self.Simulation.ioi_noise = float(form_data['ioi_noise'])
+        self.Simulation.td = float(form_data['td_value'])
+        self.Simulation.td_noise = float(form_data['td_noise'])
+        self.Simulation.tf = float(form_data['tf_value'])
+        self.Simulation.tf_noise = float(form_data['tf_noise'])
+        self.Simulation.noise = float(form_data['base_noise'])
+
+        # print(float(form_data['ioi_value']))
+        # print(float(form_data['ioi_noise']))
+        # print(float(form_data['td_value']))
+        # print(float(form_data['td_noise']))
+        # print(float(form_data['tf_value']))
+        # print(float(form_data['tf_noise']))
+        # print(float(form_data['base_noise']))
+
+        self.Simulation.generate()
+        self.save_simulation()
+        return  # json.dumps(form_data)
 
     @htmlPy.Slot()
     def javascript_function(self):

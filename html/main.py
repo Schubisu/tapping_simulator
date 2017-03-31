@@ -1,6 +1,8 @@
+#! /usr/bin/env python
 import os
 import htmlPy
-from PyQt4 import QtGui
+# from PyQt4 import QtGui
+from PySide import QtGui
 from back_end_codes.controller import TappingSimulator
 
 
@@ -21,11 +23,18 @@ app = htmlPy.AppGUI(
 # GUI configurations
 app.static_path = os.path.join(BASE_DIR, "static/")
 app.template_path = os.path.join(BASE_DIR, "templates/")
-app.template = ("tappingsimulator_views/tappingsimulator_index.html", {})
+app.template = ("ts/index.html", {})
 
-app.web_app.setMinimumWidth(1000)
-app.web_app.setMinimumHeight(500)
-# app.window.setWindowIcon(QtGui.QIcon(BASE_DIR + "/static/img/icon.png"))
+width = 1000
+height = 500
+
+app.web_app.setMinimumWidth(width)
+app.web_app.setMinimumHeight(height)
+app.web_app.setMaximumWidth(width)
+app.web_app.setMaximumHeight(height)
+app.width = width
+app.height = height
+app.window.setWindowIcon(QtGui.QIcon(BASE_DIR + "/static/img/ts_icon.png"))
 
 # Binding of back-end functionalities with GUI
 
