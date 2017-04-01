@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+import bokeh, PySide, back_end_codes, jason
 import os
 import htmlPy
 # from PyQt4 import QtGui

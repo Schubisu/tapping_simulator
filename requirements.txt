@@ -1,0 +1,16 @@
+backports-abc==0.5
+bokeh==0.12.4
+cycler==0.10.0
+htmlPy==2.0.3
+Jinja2==2.9.5
+MarkupSafe==1.0
+matplotlib==2.0.0
+numpy==1.12.1
+pyparsing==2.2.0
+PySide==1.2.4
+python-dateutil==2.6.0
+pytz==2017.2
+PyYAML==3.12
+requests==2.13.0
+six==1.10.0
+tornado==4.4.3
